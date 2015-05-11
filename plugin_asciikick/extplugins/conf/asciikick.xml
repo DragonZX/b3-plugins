@@ -1,0 +1,36 @@
+<configuration plugin="asciikick">
+	<settings name="settings">
+		<!-- kick client if thie name contains non-printable ASCII/Unicode charaters -->
+		<set name="kicknick">yes</set>
+
+		<!-- Server message that will be displayed to the entire server.
+		Leave EMPTY or set to 0 for No Public Message.
+		Possible variables you can use:
+		        $name : Kicked  client name
+                $ip : Kicked client ip
+                $id : Kicked client id
+                $guid : Kicked client guid
+                $pbid : Kicked client pbid
+                $adminname : name of the admin who Kicked the client
+                $reason : reason for the Kick
+		-->
+		<set name="announce">^3$name ^7was kicked by ^2$adminname ^7for Illegal Characters in their Name!!!</set>
+
+		<!-- Keep A Log File of Bad Names:
+		Put the full path to B3 Main Directory or any full path you choose...
+				Windows Example: 
+						<set name="logpath">C:\BigBrotherBot\</set>
+						<set name="logpath">C:\Program Files\BigBrotherBot\</set>
+				Linux Example:  
+						<set name="logpath">/xxx/xxx/xxxx/b3/</set>
+
+				NOTE::
+					YOU MUST LEAVE A TRAILING SLASH AT THE END OF YOUR DIRECTORY PATH 
+					
+		Leave full path EMPTY if you do not want to log
+				Defult Example:
+						<set name="logpath"></set>
+		-->
+		<set name="logpath"></set>
+	</settings>
+</configuration>
